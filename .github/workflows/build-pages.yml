@@ -1,0 +1,10 @@
+name: Build GH Pages
+on:
+  workflow_dispatch:
+
+jobs:
+  greet:
+    runs-on: ubuntu-latest
+    steps:
+    - name: "Hello world example"
+      run: echo "Hello world"

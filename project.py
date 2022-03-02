@@ -1,4 +1,7 @@
 def createMatrix(xVals,yVals):
+    '''creates a matrix given all the x points and all
+    the y points'''
+
     matrix = []
 
     for y in yVals:
@@ -10,6 +13,9 @@ def createMatrix(xVals,yVals):
     return matrix
 
 def getAllPts(len,min,max):
+    '''given the number of points, starting point, and ending point,
+    returns a list of points spaced evenly apart'''
+
     interval = (max-min)/(len-1)
 
     vals = []

@@ -2,6 +2,10 @@ from flask import Flask, redirect, url_for, request, jsonify
 from project import main
 app = Flask(__name__)
 
+@app.route('/', methods = ['GET'])
+def home():
+    return "Fetch Assignment is Running!"
+
 @app.route('/classify',methods = ['POST'])
 def classify():
     content = request.json

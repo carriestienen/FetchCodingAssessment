@@ -9,4 +9,4 @@ jobs:
       - name: "Update GH Pages"
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-        run: bash update-gh-pages.sh
+        run: ./update-gh-pages.sh

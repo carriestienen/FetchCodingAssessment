@@ -1,6 +1,13 @@
 def createMatrix(xVals,yVals):
     '''creates a matrix given all the x points and all
-    the y points'''
+    the y points
+    
+    Parameters
+    xVals: list of floats
+    yVals: list of floats
+
+    Returns
+    matrix: two dimensional list of floats'''
 
     matrix = []
 
@@ -14,7 +21,16 @@ def createMatrix(xVals,yVals):
 
 def getAllPts(len,min,max):
     '''given the number of points, starting point, and ending point,
-    returns a list of points spaced evenly apart'''
+    returns a list of points spaced evenly apart
+    
+    Parameters
+    len: float
+    min: float
+    max: float
+
+    Returns
+    vals: list of floats
+    '''
 
     interval = (max-min)/(len-1)
 
@@ -35,7 +51,14 @@ def organizeCPs(pts):
     such that [0,0] is the top left corner, [0,1] is the top right
     [1,0] is the bottom left and [1,1] is the bottom right
 
-    Ex. [(3,1),(1,1),(1,3),(3,3)] -> [[(1,3),(3,3)],[(1,1),(3,1)]]'''
+    Ex. [(3,1),(1,1),(1,3),(3,3)] -> [[(1,3),(3,3)],[(1,1),(3,1)]]
+    
+    Parameters
+    pts: list of tuples
+    
+    Returns
+    two-dimensional list of points
+    '''
 
     small_X = pts[0][0]
     small_Y = pts[0][1]

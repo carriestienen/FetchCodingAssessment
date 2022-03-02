@@ -1,10 +1,12 @@
-name: Build GH Pages
+name: Update GH Pages
 on:
   workflow_dispatch:
 
 jobs:
-  greet:
+  update:
     runs-on: ubuntu-latest
     steps:
-    - name: "Hello world example"
-      run: echo "Hello world"
+      - name: "Update GH Pages"
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        run: bash update-gh-pages.sh

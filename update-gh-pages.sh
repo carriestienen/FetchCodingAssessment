@@ -21,6 +21,8 @@ touch .nojekyll
 mv ../fetch-assignment-notebook.html .
 
 # update the gh pages branch
+git config --global user.email "update-automation@example.com"
+git config --global user.name "Pages Updater"
 git add .
 git commit -m "GH Pages Update $(date)"
 git push origin jupyter-gh-pages

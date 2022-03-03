@@ -4,7 +4,7 @@
 set -e
 
 # install dependencies
-apt update && apt install jupyter-nbconvert git
+sudo apt update && sudo apt install jupyter-nbconvert git
 
 # execute and render the results of the jupyter notebook
 jupyter nbconvert fetch-assignment-notebook.ipynb --to html

@@ -18,7 +18,7 @@ git clone "https://${GH_TOKEN}@github.com/carriestienen/FetchCodingAssessment.gi
 cd FetchCodingAssessment
 git checkout jupyter-gh-pages
 touch .nojekyll
-mv ../fetch-assignment-notebook.html .
+mv ../fetch-assignment-notebook.html ./index.html
 
 # update the gh pages branch
 git config --global user.email "update-automation@example.com"

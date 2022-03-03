@@ -1,6 +1,9 @@
 name: Update GH Pages
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
 
 jobs:
   update:

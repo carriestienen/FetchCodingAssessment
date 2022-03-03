@@ -5,6 +5,7 @@ set -e
 
 # install dependencies
 sudo apt update && sudo apt install jupyter git
+sudo apt install matplotlib
 
 # execute and render the results of the jupyter notebook
 jupyter-nbconvert --execute --to html fetch-assignment-notebook.ipynb

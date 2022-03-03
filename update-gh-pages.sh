@@ -7,7 +7,7 @@ set -e
 sudo apt update && sudo apt install jupyter-nbconvert git
 
 # execute and render the results of the jupyter notebook
-jupyter nbconvert fetch-assignment-notebook.ipynb --to html
+jupyter-nbconvert --execute --to html fetch-assignment-notebook.ipynb
 cp fetch-assignment-notebook.html /tmp
 
 # clone the repo in a temp build location

@@ -21,7 +21,7 @@ This jupyter notebooks shows several examples with different dimensions and imag
 
 ### Github Actions
 
-Linting and unit testing done using Github actions. The jupyter notebook is also hosted in github actions.
+Linting and unit testing done using Github actions. The html rendered jupyter notebook execution is built with github actions and hosted on GitHub pages.
 
 ## Getting Started
 

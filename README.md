@@ -13,6 +13,8 @@ Example request body:
 }
 ```
 
+Linting and unit testing done using Github actions
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -64,3 +66,7 @@ curl --location --request POST 'http://localhost:5000/classify' \
     "points":[[1, 1], [3, 1], [1, 3], [3, 3]]
 }'
 ```
+
+## Jupyter Notebook
+
+[Jupyter notebook with examples and plots](https://carriestienen.github.io/FetchCodingAssessment/)

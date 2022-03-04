@@ -70,3 +70,5 @@ curl --location --request POST 'http://localhost:5000/classify' \
 ## Jupyter Notebook
 
 [Jupyter notebook with examples and plots](https://carriestienen.github.io/FetchCodingAssessment/)
+
+This notebook is hosted with github actions

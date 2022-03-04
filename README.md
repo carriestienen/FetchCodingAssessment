@@ -13,7 +13,15 @@ Example request body:
 }
 ```
 
-Linting and unit testing done using Github actions
+### Jupyter Notebook
+
+[Jupyter notebook with examples and plots](https://carriestienen.github.io/FetchCodingAssessment/)
+
+This jupyter notebooks shows several examples with different dimensions and image coordinates. The examples are also plotted for viewing simplicity.
+
+### Github Actions
+
+Linting and unit testing done using Github actions. The jupyter notebook is also hosted in github actions.
 
 ## Getting Started
 
@@ -66,9 +74,3 @@ curl --location --request POST 'http://localhost:5000/classify' \
     "points":[[1, 1], [3, 1], [1, 3], [3, 3]]
 }'
 ```
-
-## Jupyter Notebook
-
-[Jupyter notebook with examples and plots](https://carriestienen.github.io/FetchCodingAssessment/)
-
-This notebook is hosted with github actions

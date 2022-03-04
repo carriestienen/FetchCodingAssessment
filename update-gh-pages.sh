@@ -4,7 +4,15 @@
 set -e
 
 # install dependencies
-sudo apt update && sudo apt install jupyter git && sudo pip3 install matplotlib
+sudo apt update && sudo apt install jupyter git && sudo pip3 install matplotlib pylint
+
+# run pylint
+pylint project.py -d invalid-name
+pylint proj_unittest.py -d invalid-name -d wildcard-import
+pylint server.py -d import-error
+
+# run unit tests
+python3 proj_unittest.py
 
 # execute and render the results of the jupyter notebook
 jupyter-nbconvert --execute --to html fetch-assignment-notebook.ipynb

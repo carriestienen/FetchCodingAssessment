@@ -35,7 +35,7 @@ class SimpleTest(unittest.TestCase):
         ]
 
         expected = [
-            [[1.5, 8.0], [4.0, 8.0]], 
+            [[1.5, 8.0], [4.0, 8.0]],
             [[1.5, 1.5], [4.0, 1.5]]
         ]
 
@@ -69,6 +69,8 @@ class SimpleTest(unittest.TestCase):
         self.assertEqual(res, expected)
 
     def runAllTests(self):
+        '''Function for running all unit tests'''
+
         self.test_main()
         self.test_organizeCPs()
         self.test_createMatrix()

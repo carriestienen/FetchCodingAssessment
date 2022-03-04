@@ -35,8 +35,8 @@ class SimpleTest(unittest.TestCase):
         ]
 
         expected = [
-            [[1, 3], [3, 3]],
-            [[1, 1], [3, 1]]
+            [[1.5, 8.0], [4.0, 8.0]], 
+            [[1.5, 1.5], [4.0, 1.5]]
         ]
 
         res = organizeCPs(corner_points)
@@ -46,11 +46,7 @@ class SimpleTest(unittest.TestCase):
     def test_getAllPts(self):
         '''Unit test for getAllPts function'''
 
-        expected = [
-            [[1, 3], [2, 3], [3, 3]],
-            [[1, 2], [2, 2], [3, 2]],
-            [[1, 1], [2, 1], [3, 1]]
-        ]
+        expected = [1, 2.0, 3]
 
         res = getAllPts(3, 1, 3)
 
@@ -71,3 +67,11 @@ class SimpleTest(unittest.TestCase):
         res = createMatrix(xVals,yVals)
 
         self.assertEqual(res, expected)
+
+    def runAllTests(self):
+        self.test_main()
+        self.test_organizeCPs()
+        self.test_createMatrix()
+        self.test_getAllPts()
+
+SimpleTest().runAllTests()

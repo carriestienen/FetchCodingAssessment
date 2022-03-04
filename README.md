@@ -2,7 +2,7 @@
 
 This application calculates pixel coordinate values for an image that is to be displayed on a two dimensional surface given the dimensions of the image and the corner points of the image as it is to be displayed.
 
-Flask app that accepts a JSON body at `http://localhost:5000/classify`. Expects two arguments named `dimensions` and `points` in the JSON body. 
+This is a flask app that accepts a JSON body at `http://localhost:5000/classify`. Expects two arguments named `dimensions` and `points` in the JSON body. 
 
 Example request body:
 

@@ -13,17 +13,6 @@ Example request body:
 }
 ```
 
-## Test Request with CURL
-
-```
-curl --location --request POST 'http://localhost:5000/classify' \
---header 'Content-Type: application/json' \
---data-raw '{
-    "dimensions":[3,3],
-    "points":[[1, 1], [3, 1], [1, 3], [3, 3]]
-}'
-```
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
@@ -63,4 +52,15 @@ docker run -p 5000:5000 -it classify:latest
 For developer mode
 ```
 python3.8 ./server.py
+```
+
+## Test Request with CURL
+
+```
+curl --location --request POST 'http://localhost:5000/classify' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "dimensions":[3,3],
+    "points":[[1, 1], [3, 1], [1, 3], [3, 3]]
+}'
 ```

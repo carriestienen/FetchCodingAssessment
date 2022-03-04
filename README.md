@@ -9,8 +9,19 @@ Example request body:
 ```
 {
     "dimensions":[3,3],
-    "points":[(1, 1), (3, 1), (1, 3), (3, 3)]
+    "points":[[1, 1], [3, 1], [1, 3], [3, 3]]
 }
+```
+
+## Test Request with CURL
+
+```
+curl --location --request POST 'http://localhost:5000/classify' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+    "dimensions":[3,3],
+    "points":[[1, 1], [3, 1], [1, 3], [3, 3]]
+}'
 ```
 
 ## Getting Started
